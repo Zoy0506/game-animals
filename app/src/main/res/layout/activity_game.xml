@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blue"
+    tools:context="com.dan.animals.GameActivity">
+
+    <ImageButton
+        android:id="@+id/pc1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:visibility="gone"
+        android:layout_alignLeft="@+id/pc3"
+        android:layout_alignStart="@+id/pc3"
+        android:layout_alignTop="@+id/pc2"
+        app:srcCompat="@color/colorAccent" />
+
+    <ImageButton
+        android:id="@+id/pc2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:visibility="gone"
+        android:layout_above="@+id/pc4"
+        android:layout_alignEnd="@+id/pc4"
+        android:layout_alignRight="@+id/pc4"
+        android:layout_marginBottom="34dp"
+        app:srcCompat="@color/colorAccent" />
+
+    <ImageButton
+        android:id="@+id/pc3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/pc4"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_toEndOf="@+id/cute"
+        android:layout_toRightOf="@+id/cute"
+        app:srcCompat="@color/colorAccent" />
+
+    <ImageButton
+        android:id="@+id/pc4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        app:srcCompat="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/cute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pc1"
+        android:layout_marginTop="64dp"
+        android:text="Cute baby !"
+        android:textSize="70dp"
+      />
+
+    <TextView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cute"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="Find the bear"
+        android:textSize="40dp"
+       />
+
+    <ImageView
+        android:id="@+id/original"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/right"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        app:srcCompat="@color/colorAccent"
+        />
+
+    <ImageButton
+        android:id="@+id/pc5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/pc3"
+        android:layout_alignStart="@+id/pc3"
+        android:layout_below="@+id/pc3"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        app:srcCompat="@color/colorAccent" />
+
+    <ImageButton
+        android:id="@+id/pc6"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignLeft="@+id/pc4"
+        android:layout_alignStart="@+id/pc4"
+        android:layout_alignTop="@+id/pc5"
+        android:visibility="gone"
+        app:srcCompat="@color/colorAccent" />
+
+
+</RelativeLayout>

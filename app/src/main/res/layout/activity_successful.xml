@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_blue"
+
+    tools:context="com.dan.animals.SuccessfulActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="129dp"
+        android:text="success!!"
+        android:textSize="70dp" />
+
+    <Button
+        android:id="@+id/successbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/titleflower"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="33dp"
+        android:background="#FFAEB9"
+        android:text="play"
+        android:textSize="50dp" />
+
+    <ImageView
+        android:id="@+id/titleflower"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@+id/successbut"
+        android:layout_alignStart="@+id/successbut"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="35dp"
+        app:srcCompat="@color/colorAccent" />
+</RelativeLayout>
